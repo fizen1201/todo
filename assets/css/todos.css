@@ -8,8 +8,8 @@ body {
 }
 #container{
 	box-shadow : 0 0 3px rgba(0,0,0, 0.1);
-	width: 360px;
-	margin: 100px auto;
+	width: 50vmin;
+	margin:20vmin  auto;
 	border-radius: 10px;
 	border: 10px solid black;
 	
@@ -22,7 +22,7 @@ body {
 h1{
 	color: white;
 	margin: 0;
-	padding: 10px 20px;
+	padding: 3vmin 4vmin;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
@@ -67,7 +67,7 @@ input{
 	font-size: 18px;
 	background-color: #f7f7f7;
     width: 100%;
-    padding: 13px 13px 13px 20px;
+    padding: 3vmin 3vmin 3vmin 5vmin;
     box-sizing: border-box;
     color: red;
     border: 3px solid rgba(0, 0, 0, 0);
