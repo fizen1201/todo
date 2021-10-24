@@ -8,9 +8,11 @@ body {
 }
 #container{
 	box-shadow : 0 0 3px rgba(0,0,0, 0.1);
-	width: 360px;
-	margin: 100px auto;
-	background-color: #f7f7f7;
+	width: 50vmin;
+	margin:20vmin  auto;
+	border-radius: 10px;
+	border: 10px solid black;
+	
 }
 .onclick {
 	color: grey;
@@ -20,7 +22,7 @@ body {
 h1{
 	color: white;
 	margin: 0;
-	padding: 10px 20px;
+	padding: 3vmin 4vmin;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
@@ -35,11 +37,27 @@ ul{
 	padding: 0px;
 }
 
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 li{
-	background-color: white;
+	background: linear-gradient(160deg, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 	height: 40px;
 	line-height: 40px;
-	color: #666;
+	color:white;
 	
 }
 li:nth-child(2n){
@@ -49,7 +67,7 @@ input{
 	font-size: 18px;
 	background-color: #f7f7f7;
     width: 100%;
-    padding: 13px 13px 13px 20px;
+    padding: 3vmin 3vmin 3vmin 5vmin;
     box-sizing: border-box;
     color: red;
     border: 3px solid rgba(0, 0, 0, 0);
